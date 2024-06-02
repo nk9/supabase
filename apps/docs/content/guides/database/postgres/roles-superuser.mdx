@@ -16,3 +16,7 @@ However, this does mean that some operations, that typically require `superuser`
 - `CREATE EVENT TRIGGER`
 - `COPY ... FROM PROGRAM`
 - `ALTER USER ... WITH SUPERUSER`
+
+## Self-hosted instances
+
+The `supabase_admin` role has `superuser` privileges. While it's not possible to access this role on hosted Supabase projects, you _can_ access it on self-hosted instances using the same password as the `postgres` role, which is `postgres` by default.
